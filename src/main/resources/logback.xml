@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- Define a property for the log file location -->
+    <property name="LOG_DIR" value="/Users/atulsingh/documents/logs"/>
+
+    <!-- RollingFileAppender to log into a file -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!-- File location -->
+        <file>${LOG_DIR}/app.log</file>
+
+        <!-- Rolling policy for refreshing logs -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- File pattern for rolled logs -->
+            <fileNamePattern>${LOG_DIR}/app.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <!-- Retain logs for 7 days -->
+            <maxHistory>7</maxHistory>
+        </rollingPolicy>
+
+        <!-- Format the log output -->
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+    
+    <!-- Console appender for debugging -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    
+    <statusListener class="ch.qos.logback.core.status.OnConsoleStatusListener" />
+    
+
+    <!-- Root logger to use the file appender -->
+    <root level="ERROR"> 
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="CONSOLE"/>
+    </root>
+    <root level="INFO"> 
+        <appender-ref ref="FILE"/>
+        appender-ref ref="CONSOLE"/>
+    </root>
+</configuration>
+
