@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-19T01:14:29 IST" name="ParallelSuite" finished-at="2024-12-19T01:14:34 IST" duration-ms="4668">
+  <suite started-at="2024-12-20T23:39:08 IST" name="ParallelSuite" finished-at="2024-12-20T23:39:19 IST" duration-ms="10936">
     <groups>
     </groups>
-    <test started-at="2024-12-19T01:14:29 IST" name="ParallelTests" finished-at="2024-12-19T01:14:34 IST" duration-ms="4668">
+    <test started-at="2024-12-20T23:39:08 IST" name="ParallelTests" finished-at="2024-12-20T23:39:19 IST" duration-ms="10936">
       <class name="testOne.testOne.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testOne.testOne.LoginTest@2d36e77e]" started-at="2024-12-19T01:14:29 IST" name="setUp" finished-at="2024-12-19T01:14:32 IST" duration-ms="2596" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testOne.testOne.LoginTest@6f2cfcc2]" started-at="2024-12-20T23:39:08 IST" name="setUp" finished-at="2024-12-20T23:39:17 IST" duration-ms="9141" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:testOne.testOne.LoginTest@2d36e77e]" started-at="2024-12-19T01:14:32 IST" name="testLogin" data-provider="loginData" finished-at="2024-12-19T01:14:33 IST" duration-ms="1351" status="FAIL">
+        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:testOne.testOne.LoginTest@6f2cfcc2]" started-at="2024-12-20T23:39:17 IST" name="testLogin" data-provider="loginData" finished-at="2024-12-20T23:39:18 IST" duration-ms="1122" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:testOne.testOne.LoginTest@2d36e77e]" started-at="2024-12-19T01:14:33 IST" name="testLogin" data-provider="loginData" finished-at="2024-12-19T01:14:34 IST" duration-ms="579" status="FAIL">
+        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:testOne.testOne.LoginTest@6f2cfcc2]" started-at="2024-12-20T23:39:18 IST" name="testLogin" data-provider="loginData" finished-at="2024-12-20T23:39:19 IST" duration-ms="556" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -95,7 +95,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testOne.testOne.LoginTest@2d36e77e]" started-at="2024-12-19T01:14:34 IST" name="tearDown" finished-at="2024-12-19T01:14:34 IST" duration-ms="92" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testOne.testOne.LoginTest@6f2cfcc2]" started-at="2024-12-20T23:39:19 IST" name="tearDown" finished-at="2024-12-20T23:39:19 IST" duration-ms="89" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

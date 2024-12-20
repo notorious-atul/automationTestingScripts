@@ -1,0 +1,7 @@
+<suite name="ParallelSuite" parallel="methods" thread-count="2">
+    <test name="ParallelTests">
+        <classes>
+            <class name="testOne.testOne.LoginTest" /> <!--give the whole path packagename.classFile name  -->
+        </classes>
+    </test>
+</suite>
